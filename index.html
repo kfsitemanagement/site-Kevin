@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;700&display=swap" rel="stylesheet">
+    <link href="./lightbox.css" rel="stylesheet">
+
+    <style>
+
+:root{
+     scroll-behavior: smooth; 
+
+}
+:target::before {
+    content:"";
+    display: block;
+    height: 70px;
+    margin-top: -70px;
+}
+        body {
+            padding: 0;
+            margin: 0;
+            font-family: Cabin, sans-serif;
+        }
+
+        img {
+            display: block;
+            width: 100%;
+        }
+        .icone{
+            width: 18px;
+            height: 18px;
+            display: inline;
+        }      
+
+        ul.nav {
+            list-style: none;
+            padding: 0;
+            background-color: black;
+            height: 52px;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-around;
+            align-items: center;
+            margin: 0;
+            position:sticky;
+            top: 0;
+        }
+
+        ul a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 35px;
+
+        }
+
+        h2 {
+            font-style: normal;
+            font-weight: 700;
+            font-size: 36px;
+            line-height: 44px;
+            color: #4472A8;
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+        }
+
+        section {
+            width: calc(100% - 40px);
+            margin: 150px auto;
+            max-width: 850px;
+        }
+
+        section p {
+            line-height: 1.5;
+        }
+
+        section+section {
+            border-top: 1px solid black;
+        }
+
+        .list {
+            background: none;
+            display: block;
+            line-height: 1.5;
+            margin-left: 30px;
+            list-style: none;
+            padding: 0;
+        }
+
+        .images {
+            background: none;
+            height: auto;
+            justify-content: space-between;
+            row-gap: 30px;
+            margin-top: 60px;
+            display: flex;
+            list-style: none;
+            flex-flow: row wrap;
+            padding: 0;
+        }
+
+        .images li {
+            width: 30%;
+        }
+
+        .images li .mklbItem {
+            border-radius: 10px;
+            margin-bottom: 15px;
+            aspect-ratio: 16/9;
+            object-fit: cover;
+        }
+
+        .images p {
+            margin: 0;
+            text-align: center;
+        }
+
+        .images p:first-of-type {
+            font-weight: bold;
+        }
+        
+        .images li .hidden{
+            height: 0;
+            visibility: hidden;
+            pointer-events: none;
+            margin: 0;
+        }
+    </style>
+    <title>Construction Kevin Frechette</title>
+</head>
+
+<body>
+    <img src="./lettrage_camion.jpg" alt="logo">
+    <ul class="nav">
+        <li><a href="#acceuil">Acceuil</a></li>
+        <li><a href="#services">Nos Services</a></li>
+        <li><a href="#realisations">Nos R&eacute;alisations</a></li>
+        <li><a href="#emploi">Offre d'emploi</a></li>
+        <li><a href="#contactez">Contactez-nous</a></li>
+    </ul>
+    <section>
+        <h2><a id="acceuil">Acceuil</a></h2>
+        <p>Construction Kevin Fr&eacute;chette est une entreprise familiale en pleine expansion.
+            Tout à commenc&eacute; en 2019 avec la location d’employ&eacute;s sp&eacute;cialis&eacute;s dans le domaine
+            de l’&eacute;chafaudage, sous le nom Gestion Action Plus. L’industrie vit une p&eacute;nurie sans
+            pr&eacute;c&eacute;dent de main-d’œuvre qualifi&eacute;e et sp&eacute;cialis&eacute;e. Fort de plusieurs
+            ann&eacute;es en gestion dans diff&eacute;rents types d’entreprises, Guy Fr&eacute;chette d&eacute;sire
+            partager sa vision et son exp&eacute;rience.
+            Très ambitieux et à l’&eacute;coute de sa clientèle, il souhaite am&eacute;liorer son offre de services. 
+            <br><br>
+            En 2021, avec la demande toujours grandissante, son fils Kevin Fr&eacute;chette met de l’avant ses
+            comp&eacute;tences de charpentier-menuisier et d’entrepreneur. La division en construction et
+            r&eacute;novation r&eacute;sidentielle s’ajoute à l’entreprise. Toujours à l’affût des dernières normes en
+            vigueur, ils se renouvellent et innovent sans cesse pour satisfaire leurs clients.
+            Qu'il s'agisse de travaux de petite ou grande envergure, rien ne les arr&ecirc;te.</p>
+    </section>
+
+    <section>
+        <h2><a id="services">Nos Services</a></h2>
+        <p>Qu'il s'agisse d'une construction neuve ou d'un projet de r&eacute;novation, nous vous offrons une gamme
+            compl&egrave;te de services tels que:
+        <ul class="list">
+            <li>- Gestion de projet</li>
+            <li>- Location de main d'oeuvre</li>
+            <li>- Charpente de bois</li>
+            <li>- Toiture</li>
+            <li>- Rev&ecirc;tement ext&eacute;rieur</li>
+            <li>- Tirage de joints</li>
+            <li>- Installation/remplacement de fen&ecirc;tres</li>
+            <li>- Fondations</li>
+            <li>- Maconnerie</li>
+            <li>- Et plusieurs autres...</li>
+                    
+        </ul>
+        </p>
+    
+    </section>
+
+    <section>
+        <h2><a id="realisations">Nos R&eacutealisations</a></h2>
+        <p>Voici quelques unes de nos r&eacute;alisations dans la r&eacute;gion. Quels que soient vos besoins, nous avons l'expertise pour mener a bien vos projets, peu importe leur envergure.</p>
+        <ul class="images">
+            <li>
+                <img class="mklbItem" data-gallery="projet1" src="./projet1/projet1_1.jpg" alt="" >
+                <img class="mklbItem hidden" data-gallery="projet1" src="./projet1/projet1_2.jpg" alt="">
+                <img class="mklbItem hidden" data-gallery="projet1" src="./projet1/projet1_3.jpg" alt="">
+
+                <p>Rev&ecirc;tement ext&eacute;rieur</p>
+                <p>St-Alexis-des-Monts</p>
+            </li>
+            <li>
+                <img class="mklbItem" data-gallery="projet2" src="./projet2/projet2_1.jpg" alt="">
+                <img class="mklbItem hidden" data-gallery="projet2" src="./projet2/projet2_2.jpg" alt="">
+                <img class="mklbItem hidden" data-gallery="projet2" src="./projet2/projet2_3.jpg" alt="">
+
+
+                <p>Rev&ecirc;tement ext&eacute;rieur</p>
+                <p>St-Alexis-des-Monts</p>
+            </li>
+            <li>
+                <img class="mklbItem" data-gallery="projet3" src="./projet3/projet3_1.jpg" alt="">
+                <img class="mklbItem hidden" data-gallery="projet3" src="./projet3/projet3_2.jpg" alt="">
+
+                <p>Cabanon</p>
+                <p>St-Alexis-des-Monts</p>
+            </li>
+            <li>
+                <img class="mklbItem" data-gallery="projet4" src="./projet4/projet4_1.jpg" alt="">
+                <img class="mklbItem hidden" data-gallery="projet4" src="./projet4/projet4_2.jpg" alt="">
+                <img class="mklbItem hidden" data-gallery="projet4" src="./projet4/projet4_3.jpg" alt="">
+
+                <p>Toiture</p>
+                <p>Louiseville</p>
+            </li>
+            <li>
+                <img class="mklbItem" data-gallery="projet5" src="./projet5/projet5_1.jpg" alt="">
+                <img class="mklbItem hidden" data-gallery="projet5" src="./projet5/projet5_2.jpg" alt="">
+                <img class="mklbItem hidden" data-gallery="projet5" src="./projet5/projet5_3.jpg" alt="">
+                <img class="mklbItem hidden" data-gallery="projet5" src="./projet5/projet5_4.jpg" alt="">
+                <img class="mklbItem hidden" data-gallery="projet5" src="./projet5/projet5_5.jpg" alt="">
+                <img class="mklbItem hidden" data-gallery="projet5" src="./projet5/projet5_6.jpg" alt="">
+                <img class="mklbItem hidden" data-gallery="projet5" src="./projet5/projet5_7.jpg" alt="">
+                <img class="mklbItem hidden" data-gallery="projet5" src="./projet5/projet5_8.jpg" alt="">
+                <img class="mklbItem hidden" data-gallery="projet5" src="./projet5/projet5_9.jpg" alt="">
+                <img class="mklbItem hidden" data-gallery="projet5" src="./projet5/projet5_10.jpg" alt="">
+                <img class="mklbItem hidden" data-gallery="projet5" src="./projet5/projet5_11.jpg" alt="">
+                <img class="mklbItem hidden" data-gallery="projet5" src="./projet5/projet5_12.jpg" alt="">
+                <img class="mklbItem hidden" data-gallery="projet5" src="./projet5/projet5_13.jpg" alt="">
+                <img class="mklbItem hidden" data-gallery="projet5" src="./projet5/projet5_14.jpg" alt="">
+                <img class="mklbItem hidden" data-gallery="projet5" src="./projet5/projet5_15.jpg" alt="">
+                <img class="mklbItem hidden" data-gallery="projet5" src="./projet5/projet5_16.jpg" alt="">
+
+                <p>Construction neuve</p>
+                <p>St-Alexis-des-Monts</p>
+            </li>
+            <li>
+                <img class="mklbItem" data-gallery="projet6" src="./projet6/projet6_1.jpg" alt="">
+                <img class="mklbItem hidden" data-gallery="projet6" src="./projet6/projet6_2.jpg" alt="">
+                <img class="mklbItem hidden" data-gallery="projet6" src="./projet6/projet6_3.jpg" alt="">
+
+                <p>Construction neuve</p>
+                <p>St-Alexis-des-Monts</p>
+            </li>
+        </ul>
+
+    </section>
+
+    <section>
+        <h2><a id="emploi">Offre d'emploi</a></h2>
+        <p>Construction Kevin Fr&eacute;chette est une jeune et dynamique entreprise en pleine expansion.
+            Nous cherchons pr&eacute;sentement à agrandir notre &eacute;quipe. Plusieurs postes à combler;
+            Charpentier-menuisier Compagnon et apprenti Contrema&icirc;tre</p>
+            
+           <p> Poste à temps plein, &agrave; l’ann&eacute;e<br>
+            Semaine de 4 jours (10h/jr)<br>
+            R&eacute;sidentiel neuf et r&eacute;novation<br>
+            Chantiers en Mauricie et Lanaudi&egrave;re </p>
+            <p>
+            Exigences du poste :<br><br>
+            • Facilit&eacute; d’apprentissage, <br>
+            • Capacit&eacute; de travailler en &eacute;quipe,<br>
+            • Souci du travail bien fait, <br>
+            • Avoir une attitude positive, </p>
+            
+            <p>Salaire: CCQ</p>
+            
+            <p>En vous joignant à notre &eacute;quipe, vous aurez les d&eacute;fis que vous recherchez !</p>
+          
+            <p>
+                Veuillez d&eacute;poser votre candidature via :<br><br>
+
+                <img class="icone" src="./phone-26.png" alt=""> (819) 690-2206</br>
+        
+                <img class="icone" src="./letter-24.png" alt=""> <a href="mailto:frechette_kevin@outlook.fr">frechette_kevin@outlook.fr</a></br>
+                <img class="icone" src="./facebook.png" alt=""> <a href="https://www.facebook.com/profile.php?id=100083367331161">Construction Kevin Fr&eacute;chette</a><br><br>
+                Seuls les candidats retenus seront contact&eacute;s.   
+            </p>
+        </p>
+        
+    </section>
+
+    <section>
+        <h2><a id="contactez">Contactez-nous</a></h2>
+        <p>Pour une soumission ou toute autre informations n'h&eacute;sitez pas &agrave;nous contacter:</p>
+        <p>Construction Kevin Frechette <br>
+           620, rue Thisdel <br>
+           Louiseville, Quebec <br>
+           J5V 2T5 
+           <p><img class="icone" src="./phone-26.png" alt=""> (819) 692-4740</br>
+        
+            <img class="icone" src="./letter-24.png" alt=""> <a href="mailto:frechette_kevin@outlook.fr">frechette_kevin@outlook.fr</a></br>
+            <img class="icone" src="./facebook.png" alt=""> <a href="https://www.facebook.com/profile.php?id=100083367331161">Construction Kevin Fr&eacute;chette</a>
+           </p>
+
+        </p>
+        <p>
+
+        </p>
+    
+    </section>
+    <script src="./lightbox.js"></script>
+
+
+</body>
+
+</html>
